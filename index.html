@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Protocollo Poliglotta | Strategia, Scienza e Lifestyle</title>
+    <meta name="description" content="Il portale definitivo per l'apprendimento linguistico. Risorse per studenti, guide per genitori, strategie per nomadi digitali e recensioni tecniche su Babbel.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Lexend:wght@700;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #FF5A00;
+            --secondary: #2563EB;
+            --dark: #0F172A;
+            --text: #334155;
+            --light: #F8FAFC;
+            --travel-teal: #0D9488;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            background-color: #fff;
+        }
+
+        a { text-decoration: none; transition: 0.3s; }
+
+        /* Hero Section */
+        header {
+            background: linear-gradient(135deg, var(--dark) 0%, #1e293b 100%);
+            color: white;
+            padding: 7rem 1.5rem 6rem;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+        }
+
+        .kicker {
+            color: var(--primary);
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-family: 'Lexend', sans-serif;
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+
+        .hero-p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+            color: #cbd5e1;
+        }
+
+        .hero-btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: var(--primary);
+            color: white;
+            border-radius: 50px;
+            font-weight: 700;
+        }
+        .hero-btn:hover { background: #e65100; transform: scale(1.05); }
+
+        /* Sezione Educational (Silo Studenti/Genitori) */
+        .grid-container {
+            max-width: 1100px;
+            margin: -4rem auto 4rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 0 1.5rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            text-align: center;
+            border: 1px solid #e2e8f0;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover { transform: translateY(-10px); }
+        .card h2 { font-family: 'Lexend', sans-serif; margin-bottom: 1rem; color: var(--dark); }
+
+        .btn-card {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            margin-top: 1rem;
+        }
+        .btn-studenti { background: #eff6ff; color: var(--secondary); }
+        .btn-genitori { background: #f8fafc; color: var(--dark); border: 1px solid #cbd5e1; }
+
+        .sub-links { margin-top: 1.5rem; font-size: 0.85rem; display: flex; justify-content: center; gap: 15px; }
+        .sub-links a { color: #64748b; font-weight: 600; }
+        .sub-links a:hover { color: var(--primary); }
+
+        /* Sezione Metodo (Authority) */
+        .method-section {
+            padding: 4rem 1.5rem;
+            text-align: center;
+            background: #fff;
+        }
+        
+        .tech-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .tech-pill {
+            background: #F0FDF4;
+            color: #166534;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            border: 1px solid #bbf7d0;
+        }
+
+        /* Sezione Viaggi (Lifestyle) */
+        .travel-section {
+            background: #F0FDFA;
+            padding: 5rem 1.5rem;
+            border-top: 1px solid #ccfbf1;
+            border-bottom: 1px solid #ccfbf1;
+        }
+
+        .section-header { text-align: center; margin-bottom: 3rem; }
+        .section-header h2 { font-family: 'Lexend'; font-size: 2.5rem; color: var(--travel-teal); }
+
+        .travel-grid {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .travel-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            border-left: 5px solid var(--travel-teal);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+
+        .travel-card h3 { margin-bottom: 0.5rem; font-family: 'Lexend'; color: var(--dark); }
+        .travel-card a { color: var(--travel-teal); font-weight: 700; font-size: 0.9rem; display: block; margin-top: 1rem; }
+
+        /* Box Lifetime Clean */
+        .promo-box-clean {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            color: white;
+            padding: 4rem 2rem;
+            border-radius: 30px;
+            max-width: 900px;
+            margin: 5rem auto;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-lifetime {
+            background: var(--primary);
+            color: white;
+            padding: 1rem 3rem;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 1.1rem;
+            display: inline-block;
+            margin-top: 2rem;
+        }
+
+        /* Footer Styles (Miniaturizzati per il file unico, in produzione usa CSS esterno) */
+        footer { background: var(--dark); color: #94a3b8; padding: 4rem 1.5rem; font-size: 0.9rem; margin-top: 4rem; }
+        .footer-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; }
+        .footer-col h4 { color: white; margin-bottom: 1rem; font-family: 'Lexend'; }
+        .footer-col ul { list-style: none; }
+        .footer-col li { margin-bottom: 8px; }
+        .footer-col a { color: #94a3b8; }
+        .footer-col a:hover { color: var(--primary); }
+
+        @media (max-width: 600px) { h1 { font-size: 2.5rem; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <span class="kicker">Il Protocollo Poliglotta 2026</span>
+        <h1>Il Futuro non ha <br>sottotitoli.</h1>
+        <p class="hero-p">Strategie scientifiche per studenti ambiziosi, genitori lungimiranti e viaggiatori che rifiutano di essere turisti.</p>
+        <a href="brand/manifesto.html" class="hero-btn">Leggi il Manifesto</a>
+    </header>
+
+    <div class="grid-container">
+        <div class="card">
+            <span style="font-size: 3rem;">🎓</span>
+            <h2>Per gli Studenti</h2>
+            <p>Smetti di studiare per il voto, inizia a studiare per il futuro. Preparati per l'Erasmus e il mondo del lavoro.</p>
+            <a href="studenti/migliorare-voti.html" class="btn-card btn-studenti">Migliora i Voti</a>
+            <div class="sub-links">
+                <a href="studenti/erasmus-tranquillo.html">Erasmus 2026</a>
+                <a href="studenti/seconda-lingua-extra.html">Terza Lingua</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <span style="font-size: 3rem;">🛡️</span>
+            <h2>Per i Genitori</h2>
+            <p>Il bilinguismo è l'investimento con il ROI più alto per la carriera di tuo figlio. Scopri i dati e la neuroscienza.</p>
+            <a href="blog/recensione-babbel-2026.html" class="btn-card btn-genitori">Analisi Tecnica</a>
+            <div class="sub-links">
+                <a href="blog/opinioni-babbel.html">Opinioni Reali</a>
+                <a href="supporto/faq.html">Domande Frequenti</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="method-section">
+        <h2 style="font-family: 'Lexend'; font-size: 2rem;">Non è magia, è Metodo.</h2>
+        <p style="max-width: 600px; margin: 1rem auto; color: #64748b;">
+            Abbandona l'apprendimento passivo. Il nostro protocollo si basa su principi neuroscientifici validati.
+        </p>
+        <div class="tech-grid">
+            <span class="tech-pill">Spaced Repetition System</span>
+            <span class="tech-pill">Audio Madrelingua Reale</span>
+            <span class="tech-pill">15 Minuti/Giorno</span>
+        </div>
+        <div style="margin-top: 2rem;">
+            <a href="blog/recensione-metodo-babbel.html" style="color: var(--secondary); font-weight: 700;">Leggi la Recensione del Metodo →</a>
+        </div>
+    </section>
+
+    <section class="travel-section">
+        <div class="section-header">
+            <h2>Viaggiare Senza Confini</h2>
+            <p>Dimentica le trappole per turisti. Vivi il mondo da locale.</p>
+        </div>
+
+        <div class="travel-grid">
+            <div class="travel-card">
+                <h3>🌍 Nomadi Digitali</h3>
+                <p>Lavorare da Lisbona o Città del Messico. Come usare la lingua per trovare casa e network.</p>
+                <a href="viaggi/nomadi-digitali.html">Vedi Guida Nomadi →</a>
+            </div>
+            
+            <div class="travel-card" style="border-left-color: #FF5A00;">
+                <h3>🍷 Food & Culture</h3>
+                <p>Non ordinare a caso. Scopri i segreti dei menu francesi, spagnoli e portoghesi.</p>
+                <a href="viaggi/menu-francese-segreti.html" style="color: #FF5A00;">Guide Gastronomiche →</a>
+            </div>
+
+            <div class="travel-card" style="border-left-color: #DC2626;">
+                <h3>⚠️ Trappole Linguistiche</h3>
+                <p>Falsi Amici e figuracce. Cosa NON dire mai a Berlino o Madrid.</p>
+                <a href="viaggi/falsi-amici-spagnolo.html" style="color: #DC2626;">Evita gli Errori →</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="promo-box-clean">
+        <h2 style="font-family: 'Lexend'; font-size: 2.5rem; margin-bottom: 1rem;">Sblocca il Mondo intero.</h2>
+        <p style="opacity: 0.9; max-width: 650px; margin: 0 auto; font-size: 1.1rem;">
+            L'accesso Lifetime ti dà le chiavi di tutte le 14 lingue per sempre. 
+            Un unico pagamento per accompagnare i tuoi studi, i tuoi viaggi e la tua carriera, senza abbonamenti mensili.
+        </p>
+        <a href="IL_TUO_LINK_AFFILIATO" class="btn-lifetime">Scopri l'Offerta Lifetime</a>
+        <p style="margin-top: 1.5rem; font-size: 0.85rem; opacity: 0.6;">Soddisfatti o rimborsati entro 20 giorni.</p>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Lingue</h4>
+                <ul>
+                    <li><a href="viaggi/inglese-uk-vs-us.html">🇬🇧 Inglese</a></li>
+                    <li><a href="viaggi/spagnolo-spagna-vs-latam.html">🇪🇸 Spagnolo</a></li>
+                    <li><a href="viaggi/menu-francese-segreti.html">🇫🇷 Francese</a></li>
+                    <li><a href="viaggi/gastronomia-tedesca.html">🇩🇪 Tedesco</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Risorse</h4>
+                <ul>
+                    <li><a href="blog/podcast-babbel.html">Podcast Audio</a></li>
+                    <li><a href="blog/recensione-metodo-babbel.html">Recensione Tecnica</a></li>
+                    <li><a href="viaggi/nomadi-digitali.html">Nomadi Digitali</a></li>
+                    <li><a href="supporto/faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Il Protocollo</h4>
+                <ul>
+                    <li><a href="brand/manifesto.html">Chi Siamo</a></li>
+                    <li><a href="legal/disclosure.html">Affiliate Disclosure</a></li>
+                    <li><a href="legal/privacy.html">Privacy Policy</a></li>
+                    <li><a href="sitemap.xml">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 3rem; border-top: 1px solid #334155; padding-top: 2rem;">
+            <p>© 2026 Il Protocollo Poliglotta | Eccellenza Linguistica</p>
+        </div>
+    </footer>
+
+</body>
+</html>
