@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hub Francese: Risorse e Strategie | Il Protocollo Poliglotta</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Lexend:wght@700;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #FF5A00;
+            --fr-blue: #002395;
+            --fr-red: #ED2939;
+            --dark: #0F172A;
+            --text: #334155;
+            --bg-light: #F8FAFC;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; color: var(--text); background-color: #fff; line-height: 1.6; }
+
+        header {
+            padding: 6rem 1.5rem;
+            text-align: center;
+            background: linear-gradient(135deg, var(--fr-blue) 0%, #1e1b4b 100%);
+            color: white;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+
+        h1 { font-family: 'Lexend', sans-serif; font-size: 3.5rem; line-height: 1.1; margin-bottom: 1rem; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 4rem 1.5rem; }
+
+        .section-title {
+            font-family: 'Lexend', sans-serif;
+            font-size: 2rem;
+            color: var(--dark);
+            margin: 4rem 0 2rem;
+            border-left: 5px solid var(--fr-red);
+            padding-left: 1rem;
+        }
+
+        .grid-resources {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+        }
+
+        .resource-card {
+            background: var(--bg-light);
+            padding: 2rem;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid #e2e8f0;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-color: var(--fr-blue);
+        }
+
+        .resource-card h3 { font-family: 'Lexend', sans-serif; color: var(--fr-blue); font-size: 1.5rem; margin-bottom: 1rem; }
+        .tag { font-size: 0.75rem; font-weight: 800; text-transform: uppercase; padding: 4px 12px; border-radius: 50px; background: #fee2e2; color: var(--fr-red); display: inline-block; margin-bottom: 1rem; }
+        .btn-link { display: inline-block; margin-top: 1.5rem; color: var(--primary); font-weight: 800; text-decoration: none; }
+
+        .cta-footer { background: var(--dark); color: white; padding: 4rem 2rem; border-radius: 30px; text-align: center; margin-top: 6rem; }
+        .btn-main { display: inline-block; background: var(--primary); color: white; padding: 1.2rem 3rem; text-decoration: none; font-weight: 800; border-radius: 50px; margin-top: 2rem; }
+        .nav-back { font-weight: 700; color: var(--fr-blue); text-decoration: none; margin-bottom: 2rem; display: inline-block; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <span style="text-transform:uppercase; font-weight:800; color:#94a3b8; letter-spacing:2px;">La Langue de Molière</span>
+        <h1>Il Francese che ti apre <br>le porte dell'Europa.</h1>
+    </header>
+
+    <div class="container">
+        <a href="../index.html" class="nav-back">← Torna alla Home Generale</a>
+
+        <p style="font-size:1.2rem; color:#64748b; max-width:800px;">Dalla gastronomia raffinata alla carriera diplomatica, il francese è molto più di una lingua: è uno stile di vita. Esplora le nostre risorse per padroneggiarlo con il Protocollo Poliglotta.</p>
+
+        <h2 class="section-title">Kit di Sopravvivenza</h2>
+        <div class="grid-resources">
+            <div class="resource-card">
+                <div>
+                    <span class="tag">Viaggi</span>
+                    <h3>50 Frasi Essenziali</h3>
+                    <p>Tutto quello che ti serve per ordinare in un bistrot o muoverti a Parigi senza sembrare un turista.</p>
+                </div>
+                <a href="frasi-viaggio.html" class="btn-link">Vai al Kit →</a>
+            </div>
+            <div class="resource-card">
+                <div>
+                    <span class="tag">Curiosità</span>
+                    <h3>20 Parole Intraducibili</h3>
+                    <p>Dépaysement, Flâner... scopri i concetti francesi che non hanno un nome in italiano.</p>
+                </div>
+                <a href="parole-intraducibili.html" class="btn-link">Esplora la poesia →</a>
+            </div>
+            <div class="resource-card">
+                <div>
+                    <span class="tag">Street French</span>
+                    <h3>Argot e Slang</h3>
+                    <p>Capisci cosa dicono i giovani francesi. Dal verlan ai termini della strada più comuni.</p>
+                </div>
+                <a href="slang-e-idiomi.html" class="btn-link">Parla come un local →</a>
+            </div>
+        </div>
+
+        <h2 class="section-title">Cultura & Precisione</h2>
+        <div class="grid-resources">
+            <div class="resource-card">
+                <div>
+                    <span class="tag">Anti-Gaffe</span>
+                    <h3>Falsi Amici</h3>
+                    <p>Attenzione! 'Fermer' non è fermare. Scopri le trappole linguistiche tra italiano e francese.</p>
+                </div>
+                <a href="../viaggi/falsi-amici-francese.html" class="btn-link">Evita errori →</a>
+            </div>
+            <div class="resource-card">
+                <div>
+                    <span class="tag">Food</span>
+                    <h3>Segreti del Menu</h3>
+                    <p>Decodifica i menu francesi: come ordinare l'acqua gratis e capire le tipologie di cottura.</p>
+                </div>
+                <a href="../viaggi/menu-francese-segreti.html" class="btn-link">Guida al Bistrot →</a>
+            </div>
+            <div class="resource-card">
+                <div>
+                    <span class="tag">Didattica</span>
+                    <h3>Errori Comuni</h3>
+                    <p>I classici scivoloni degli italiani che studiano francese e come correggerli subito.</p>
+                </div>
+                <a href="errori-comuni.html" class="btn-link">Migliora subito →</a>
+            </div>
+        </div>
+
+        <h2 class="section-title">Strategia</h2>
+        <div class="grid-resources">
+            <div class="resource-card">
+                <div>
+                    <span class="tag">Carriera</span>
+                    <h3>Perché il Francese?</h3>
+                    <p>Analisi sulle opportunità di carriera e i vantaggi cognitivi della lingua francese nel 2026.</p>
+                </div>
+                <a href="../blog/perche-francese.html" class="btn-link">Leggi il Pillar →</a>
+            </div>
+        </div>
+
+        <div class="cta-footer">
+            <h2 style="font-family:'Lexend'; font-size: 2rem;">Voulez-vous parler français?</h2>
+            <p style="color:#cbd5e1; margin-top:1rem;">Il metodo Babbel è perfetto per chi parla italiano, grazie alla somiglianza tra le nostre lingue. Inizia oggi.</p>
+            <a rel="sponsored" href="https://www.awin1.com/awclick.php?gid=322314&mid=9659&awinaffid=2764918&linkid=2038224&clickref=" class="btn-main">Inizia il tuo viaggio su Babbel</a>
+        </div>
+    </div>
+
+    <footer style="text-align:center; padding: 4rem; background:#f8fafc; color:#94a3b8; font-size:0.9rem;">
+        <p>© 2026 Il Protocollo Poliglotta | La tua guida al Francese Reale.</p>
+    </footer>
+
+</body>
+</html>
