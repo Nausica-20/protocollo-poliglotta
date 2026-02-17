@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Il Protocollo Poliglotta | Dominio Linguistico e Strategia 2026</title>
-    <meta name="description" content="Trasforma le lingue nel tuo vantaggio competitivo. Guide strategiche su Tedesco, Portoghese, Spagnolo e Francese per carriera, viaggi e biohacking mentale.">
+    <meta name="description" content="Ottimizza il tuo futuro attraverso il bilinguismo strategico. Guide avanzate su Inglese, Tedesco, Francese, Portoghese e Spagnolo.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Lexend:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Lexend:wght@700;900&display=swap" rel="stylesheet">
 
     <style>
         :root {
@@ -26,84 +26,94 @@
             line-height: 1.6;
             color: var(--text);
             background-color: #fff;
+            overflow-x: hidden;
         }
 
         /* Hero Section */
         header {
             background: linear-gradient(135deg, var(--dark) 0%, #1e293b 100%);
             color: white;
-            padding: 8rem 1.5rem;
+            padding: 10rem 1.5rem 12rem;
             text-align: center;
-            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         }
 
-        h1 { font-family: 'Lexend', sans-serif; font-size: 4rem; line-height: 1; margin-bottom: 1.5rem; letter-spacing: -1px; }
-        .hero-p { font-size: 1.4rem; opacity: 0.9; max-width: 800px; margin: 0 auto 2.5rem; font-weight: 300; }
+        h1 { font-family: 'Lexend', sans-serif; font-size: 4.5rem; line-height: 1; margin-bottom: 1.5rem; letter-spacing: -2px; }
+        .hero-p { font-size: 1.5rem; opacity: 0.9; max-width: 850px; margin: 0 auto 3rem; font-weight: 300; }
 
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+        .container { max-width: 1240px; margin: 0 auto; padding: 0 1.5rem; }
 
-        /* Grid System */
+        /* Hub Grid */
         .hub-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: -80px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: -120px;
             position: relative;
             z-index: 10;
         }
 
         .hub-card {
             background: white;
-            padding: 3rem 2rem;
+            padding: 2.5rem 1.5rem;
             border-radius: 24px;
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
             text-decoration: none;
             color: inherit;
-            transition: all 0.3s ease;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             border: 1px solid #e2e8f0;
-            display: flex;
-            flex-direction: column;
+            text-align: center;
         }
 
-        .hub-card:hover { transform: translateY(-10px); border-color: var(--primary); }
+        .hub-card:hover { transform: translateY(-15px); border-color: var(--primary); }
+        .hub-card h2 { font-family: 'Lexend', sans-serif; font-size: 1.6rem; margin-bottom: 0.8rem; }
+        .hub-card p { font-size: 0.9rem; color: #64748b; margin-bottom: 1.5rem; }
 
-        .hub-card h2 { font-family: 'Lexend', sans-serif; font-size: 2rem; margin-bottom: 1rem; }
-        .hub-card p { color: #64748b; margin-bottom: 2rem; flex-grow: 1; }
-        
-        .flag-bar { height: 6px; width: 60px; border-radius: 3px; margin-bottom: 1.5rem; }
+        .flag-line { height: 5px; width: 40px; margin: 0 auto 1.5rem; border-radius: 10px; }
 
-        /* Sections */
-        .feature-section { padding: 6rem 0; }
-        .section-title { font-family: 'Lexend', sans-serif; font-size: 2.5rem; text-align: center; margin-bottom: 4rem; }
+        /* Strategic Section */
+        .strategy-section { padding: 8rem 0; background: white; }
+        .section-tag { color: var(--primary); font-weight: 800; text-transform: uppercase; letter-spacing: 2px; display: block; text-align: center; margin-bottom: 1rem; }
+        .section-title { font-family: 'Lexend', sans-serif; font-size: 3rem; text-align: center; margin-bottom: 4rem; color: var(--dark); }
 
-        /* CTA */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            align-items: center;
+        }
+
+        /* CTA Section */
         .master-cta {
             background: var(--dark);
             color: white;
-            padding: 5rem 2rem;
-            border-radius: 40px;
+            padding: 6rem 2rem;
+            border-radius: 50px;
             text-align: center;
-            margin: 6rem 0;
-            border-bottom: 10px solid var(--primary);
+            margin: 4rem 0;
+            position: relative;
+            overflow: hidden;
         }
 
         .btn-main {
             display: inline-block;
             background: var(--primary);
             color: white;
-            padding: 1.3rem 4rem;
+            padding: 1.4rem 4rem;
             border-radius: 100px;
             font-weight: 800;
             text-decoration: none;
             font-size: 1.2rem;
-            box-shadow: 0 10px 20px rgba(255, 90, 0, 0.3);
+            transition: 0.3s;
         }
 
-        footer { background: #f1f5f9; padding: 4rem 0; text-align: center; font-size: 0.9rem; }
+        .btn-main:hover { transform: scale(1.05); box-shadow: 0 15px 30px rgba(255, 90, 0, 0.4); }
+
+        footer { background: #f1f5f9; padding: 6rem 0; text-align: center; }
 
         @media (max-width: 768px) {
-            h1 { font-size: 2.5rem; }
-            .hub-grid { margin-top: 20px; }
+            h1 { font-size: 2.8rem; }
+            .hub-grid { margin-top: -50px; }
         }
     </style>
 </head>
@@ -112,85 +122,100 @@
     <header>
         <div class="container">
             <h1>Il Protocollo Poliglotta.</h1>
-            <p class="hero-p">Non studiare una lingua. Installa un nuovo sistema operativo per il tuo cervello.</p>
-            <a rel="sponsored" href="https://www.awin1.com/awclick.php?gid=322314&mid=9659&awinaffid=2764918&linkid=2038224&clickref=" class="btn-main">Ottieni Babbel Lifetime</a>
+            <p class="hero-p">Non limitarti a comunicare. Domina i mercati, espandi la tua mente e progetta il tuo successo globale.</p>
+            <a href="blog/babbel-lifetime-recensione.html" class="btn-main">Inizia il Protocollo</a>
         </div>
     </header>
 
     <main class="container">
         
         <div class="hub-grid">
+            <a href="inglese/index.html" class="hub-card">
+                <div class="flag-line" style="background: #00247D;"></div>
+                <h2>Inglese</h2>
+                <p>Il sistema operativo globale. Essenziale per tech e finanza.</p>
+                <strong style="color: var(--accent);">Esplora →</strong>
+            </a>
+
             <a href="tedesco/index.html" class="hub-card">
-                <div class="flag-bar" style="background: #FFCE00;"></div>
+                <div class="flag-line" style="background: #FFCE00;"></div>
                 <h2>Tedesco</h2>
-                <p>La lingua della leadership industriale e del mercato DACH. Ottimizza la tua carriera nel cuore dell'Europa.</p>
-                <strong>Accedi al Protocollo →</strong>
+                <p>Leadership industriale. La chiave del mercato DACH.</p>
+                <strong style="color: var(--accent);">Esplora →</strong>
+            </a>
+
+            <a href="francese/index.html" class="hub-card">
+                <div class="flag-line" style="background: #002395;"></div>
+                <h2>Francese</h2>
+                <p>Diplomazia e lusso. La lingua delle istituzioni d'élite.</p>
+                <strong style="color: var(--accent);">Esplora →</strong>
             </a>
 
             <a href="portoghese/index.html" class="hub-card">
-                <div class="flag-bar" style="background: #009c3b;"></div>
+                <div class="flag-line" style="background: #009c3b;"></div>
                 <h2>Portoghese</h2>
-                <p>Dall'hub tech di Lisbona alla potenza del Brasile. Il miglior ROI linguistico per un italiano nel 2026.</p>
-                <strong>Accedi al Protocollo →</strong>
+                <p>Il miglior ROI 2026. Brasile e Hub tech di Lisbona.</p>
+                <strong style="color: var(--accent);">Esplora →</strong>
             </a>
 
             <a href="spagnolo/index.html" class="hub-card">
-                <div class="flag-bar" style="background: #AA151B;"></div>
+                <div class="flag-line" style="background: #AA151B;"></div>
                 <h2>Spagnolo</h2>
-                <p>Oltre 500 milioni di parlanti. La chiave per gli Stati Uniti e l'America Latina emergente.</p>
-                <strong>Accedi al Protocollo →</strong>
+                <p>Oltre 500M di parlanti. Gateway per le Americhe.</p>
+                <strong style="color: var(--accent);">Esplora →</strong>
             </a>
         </div>
 
-        <section class="feature-section">
-            <h2 class="section-title">Perché parlare più lingue nel 2026?</h2>
+        <section class="strategy-section">
+            <span class="section-tag">Value Proposition</span>
+            <h2 class="section-title">Perché il bilinguismo è un asset finanziario.</h2>
             
-            
-
-            <div class="hub-grid" style="margin-top: 0;">
-                <a href="blog/benefici-economici-lingue.html" class="hub-card" style="padding: 2rem; border-radius: 16px;">
-                    <h3>Benefici Economici</h3>
-                    <p>Analisi del premium salariale e delle opportunità nel mercato globale del lavoro.</p>
-                </a>
-                <a href="blog/benefici-cervello-lingue.html" class="hub-card" style="padding: 2rem; border-radius: 16px;">
-                    <h3>Biohacking Mentale</h3>
-                    <p>Come il bilinguismo protegge il tuo cervello dall'invecchiamento e potenzia il focus.</p>
-                </a>
-                <a href="lifelong-learning/guida-apprendimento-continuo.html" class="hub-card" style="padding: 2rem; border-radius: 16px;">
-                    <h3>Lifelong Learning</h3>
-                    <p>Strategie per imparare a qualsiasi età. Il cervello non va mai in pensione.</p>
-                </a>
+            <div class="info-grid">
+                <div>
+                    <h3 style="font-family: 'Lexend'; font-size: 1.8rem; margin-bottom: 1.5rem;">Il Premium Salariale</h3>
+                    <p>Nel 2026, parlare una seconda lingua non è un "plus", è un moltiplicatore di reddito. Analizziamo come il tedesco e l'inglese possano aumentare il tuo potenziale di guadagno fino al 20%.</p>
+                    <a href="blog/benefici-economici-lingue.html" style="color: var(--primary); font-weight: 700; text-decoration: none; display: block; margin-top: 1rem;">Leggi l'analisi del ROI →</a>
+                </div>
+                
             </div>
-        </section>
 
-        <section class="feature-section" style="background: var(--bg-light); border-radius: 40px; padding: 4rem 2rem;">
-            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-                <h2 style="font-family: 'Lexend', sans-serif; font-size: 2rem;">Risorse per Famiglie e Studenti</h2>
-                <p style="margin: 1rem 0 2rem;">Crescere figli bilingui o prepararsi per un Erasmus? Abbiamo i protocolli specifici.</p>
-                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-                    <a href="studenti/guida-genitori.html" style="color: var(--accent); font-weight: 700;">Guida per Genitori</a>
-                    <a href="studenti/migliorare-voti.html" style="color: var(--accent); font-weight: 700;">Migliorare i voti</a>
-                    <a href="studenti/erasmus-tranquillo.html" style="color: var(--accent); font-weight: 700;">Erasmus Protocol</a>
+            <div class="info-grid" style="margin-top: 6rem;">
+                
+                <div>
+                    <h3 style="font-family: 'Lexend'; font-size: 1.8rem; margin-bottom: 1.5rem;">Biohacking & Longevità</h3>
+                    <p>Il bilinguismo è l'allenamento definitivo per la riserva cognitiva. Scopri come proteggere il tuo cervello dall'invecchiamento e migliorare il focus attraverso il "metodo dei 15 minuti".</p>
+                    <a href="blog/benefici-cervello-lingue.html" style="color: var(--primary); font-weight: 700; text-decoration: none; display: block; margin-top: 1rem;">La scienza del Protocollo →</a>
                 </div>
             </div>
         </section>
 
+        <section style="background: var(--bg-light); padding: 6rem 2rem; border-radius: 40px; text-align: center;">
+            <h2 style="font-family: 'Lexend'; font-size: 2.2rem; margin-bottom: 1.5rem;">Progetta il futuro dei tuoi figli.</h2>
+            <p style="max-width: 700px; margin: 0 auto 3rem; font-size: 1.1rem; color: #64748b;">Dalla finestra di opportunità dell'infanzia ai protocolli per studenti Erasmus. Costruiamo le basi per la prossima generazione di leader globali.</p>
+            <div style="display: flex; gap: 30px; justify-content: center; flex-wrap: wrap;">
+                <a href="studenti/guida-genitori.html" style="text-decoration: none; font-weight: 800; color: var(--dark);">Guida Genitori</a>
+                <a href="studenti/migliorare-voti.html" style="text-decoration: none; font-weight: 800; color: var(--dark);">Migliorare i Voti</a>
+                <a href="studenti/erasmus-tranquillo.html" style="text-decoration: none; font-weight: 800; color: var(--dark);">Erasmus Protocol</a>
+            </div>
+        </section>
+
         <div class="master-cta">
-            <h2 style="font-family: 'Lexend'; font-size: 2.5rem; border: none; color: white;">Smetti di essere un turista nel mondo.</h2>
-            <p style="margin: 1.5rem 0 2.5rem; opacity: 0.8; font-size: 1.2rem;">L'investimento in se stessi è l'unico che non subisce inflazione. Scegli il tuo percorso oggi.</p>
-             <a rel="sponsored" href="https://www.awin1.com/awclick.php?gid=322314&mid=9659&awinaffid=2764918&linkid=2038224&clickref="class="btn-main">Sblocca Babbel Lifetime</a>
+            <h2 style="font-family: 'Lexend'; font-size: 2.8rem; margin-bottom: 1.5rem;">L'investimento che non subisce inflazione.</h2>
+            <p style="font-size: 1.3rem; opacity: 0.8; margin-bottom: 3rem;">Sblocca il tuo accesso a vita a tutte le lingue del mondo. Una sola volta. Per sempre.</p>
+             <a rel="sponsored" href="https://www.awin1.com/awclick.php?gid=322314&mid=9659&awinaffid=2764918&linkid=2038224&clickref="class="btn-main">Ottieni Babbel Lifetime</a>
         </div>
 
     </main>
 
     <footer>
         <div class="container">
-            <p><strong>Il Protocollo Poliglotta © 2026</strong></p>
-            <p style="margin-top: 1rem; opacity: 0.6;">Navighiamo tra le lingue, connettiamo i mondi, ottimizziamo il futuro.</p>
-            <div style="margin-top: 2rem; display: flex; gap: 20px; justify-content: center;">
-                <a href="legal/disclosure.html" style="color: var(--text); text-decoration: none;">Privacy & Disclosure</a>
-                <a href="supporto/faq.html" style="color: var(--text); text-decoration: none;">FAQ</a>
+            <h2 style="font-family: 'Lexend'; margin-bottom: 2rem;">Il Protocollo Poliglotta</h2>
+            <div style="display: flex; gap: 40px; justify-content: center; margin-bottom: 3rem; flex-wrap: wrap;">
+                <a href="lifelong-learning/guida-apprendimento-continuo.html" style="color: var(--text); text-decoration: none; font-weight: 600;">Lifelong Learning</a>
+                <a href="supporto/faq.html" style="color: var(--text); text-decoration: none; font-weight: 600;">FAQ</a>
+                <a href="legal/disclosure.html" style="color: var(--text); text-decoration: none; font-weight: 600;">Privacy & Disclosure</a>
             </div>
+            <p style="opacity: 0.5;">© 2026 Il Protocollo Poliglotta. Precisione strategica applicata alla linguistica.</p>
         </div>
     </footer>
 
