@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impara l'Inglese Reale | Il Protocollo Poliglotta</title>
+    <meta name="description" content="Risorse, guide e strategie per padroneggiare l'inglese britannico e americano.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Lexend:wght@700;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #FF5A00;
+            --eng-blue: #1E3A8A;
+            --eng-red: #DC2626;
+            --dark: #0F172A;
+            --text: #334155;
+            --bg: #F1F5F9;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            background-color: #fff;
+            padding-bottom: 80px;
+        }
+
+        header {
+            padding: 6rem 1.5rem;
+            text-align: center;
+            background: linear-gradient(135deg, var(--eng-blue) 0%, #1e1b4b 100%);
+            color: white;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+
+        .kicker {
+            color: #93C5FD;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-family: 'Lexend', sans-serif;
+            font-size: 3rem;
+            line-height: 1.1;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+        }
+
+        .grid-resources {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 3rem;
+        }
+
+        .resource-card {
+            background: var(--bg);
+            padding: 2rem;
+            border-radius: 16px;
+            transition: transform 0.2s;
+            border: 1px solid #e2e8f0;
+            text-align: left;
+        }
+
+        .resource-card:hover { transform: translateY(-5px); border-color: var(--eng-blue); }
+
+        .resource-card h3 {
+            color: var(--eng-blue);
+            font-family: 'Lexend', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .tag-culture { background: #DBEAFE; color: var(--eng-blue); }
+        .tag-danger { background: #FEE2E2; color: var(--eng-red); }
+        .tag-food { background: #FEF3C7; color: #D97706; }
+
+        .btn-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: var(--dark);
+            font-weight: 700;
+            text-decoration: none;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .nav-back {
+            display: inline-block;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            color: var(--eng-blue);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <span class="kicker">The Global Language</span>
+        <h1>Inglese: Oltre <br>il "Cat is on the table".</h1>
+    </header>
+
+    <div class="container">
+        <a href="../index.html" class="nav-back">← Torna alla Home Generale</a>
+
+        <p class="intro">
+            L'inglese scolastico non basta per lavorare o viaggiare nel 2026. 
+            Qui trovi le risorse strategiche per capire le sfumature culturali, evitare errori imbarazzanti e padroneggiare la lingua del business e del lifestyle.
+        </p>
+
+        <div class="grid-resources">
+            
+            <div class="resource-card">
+                <span class="tag tag-culture">Essenziale</span>
+                <h3>Kit di Sopravvivenza</h3>
+                <p>Le frasi pronte all'uso per emergenze, ristoranti e presentazioni. Salva questa guida prima di partire.</p>
+                <a href="frasi-viaggio.html" class="btn-link">Vai al Kit →</a>
+            </div>
+
+            <div class="resource-card">
+                <span class="tag tag-culture">Business</span>
+                <h3>UK vs USA</h3>
+                <p>Differenze linguistiche e culturali tra le due varianti. Fondamentale per contesti professionali.</p>
+                <a href="../viaggi/inglese-uk-vs-us.html" class="btn-link">Scopri le differenze →</a>
+            </div>
+
+            <div class="resource-card">
+                <span class="tag tag-danger">Trappole</span>
+                <h3>Falsi Amici</h3>
+                <p>Non dire "Actually" per dire "Attualmente"! Scopri i 10 errori più comuni che tradiscono gli italiani.</p>
+                <a href="../viaggi/falsi-amici-inglese.html" class="btn-link">Evita figuracce →</a>
+            </div>
+
+            <div class="resource-card">
+                <span class="tag tag-food">Lifestyle</span>
+                <h3>Gastronomia UK</h3>
+                <p>Oltre il fish & chips. Come ordinare al pub e capire la cultura culinaria britannica.</p>
+                <a href="../viaggi/gastronomia-inglese.html" class="btn-link">Guida al Cibo →</a>
+            </div>
+
+            <div class="resource-card">
+                <span class="tag tag-culture">Curiosità</span>
+                <h3>Parole Intraducibili</h3>
+                <p>Da "Serendipity" a "Hiraeth": concetti inglesi meravigliosi che non hanno un corrispondente italiano.</p>
+                <a href="parole-intraducibili.html" class="btn-link">Scopri i termini →</a>
+            </div>
+
+            <div class="resource-card">
+                <span class="tag tag-culture">Strategy</span>
+                <h3>Perché l'Inglese?</h3>
+                <p>Analisi sul perché l'inglese rimane il "sistema operativo" del mondo nel 2026.</p>
+                <a href="../blog/perche-inglese.html" class="btn-link">Leggi l'articolo →</a>
+            </div>
+
+        </div>
+
+        <div style="background: var(--dark); color: white; padding: 4rem 2rem; border-radius: 30px; text-align: center; margin-top: 5rem;">
+            <h2 style="font-family: 'Lexend'; font-size: 2rem; margin-bottom: 1rem;">Dominare l'Inglese è un Asset.</h2>
+            <p style="color: #cbd5e1; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Sfrutta il metodo Babbel per passare dalla teoria alla pratica in soli 15 minuti al giorno.
+            </p>
+             <a rel="sponsored" href="https://www.awin1.com/awclick.php?gid=322314&mid=9659&awinaffid=2764918&linkid=2038224&clickref=" style="background: var(--primary); color: white; padding: 1.2rem 3rem; text-decoration: none; font-weight: 800; border-radius: 50px; display: inline-block;">Inizia ora su Babbel</a>
+        </div>
+
+    </div>
+
+    <footer style="text-align: center; padding: 3rem; font-size: 0.85rem; color: #94a3b8;">
+        <p>© 2026 Il Protocollo Poliglotta | English Resources Hub</p>
+    </footer>
+
+</body>
+</html>
