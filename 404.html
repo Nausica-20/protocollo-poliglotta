@@ -3,148 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Pagina Non Trovata | Il Protocollo Poliglotta</title>
-    
+    <title>404: Rotta Non Trovata | Il Protocollo Poliglotta</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Lexend:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Lexend:wght@700;900&display=swap" rel="stylesheet">
 
     <style>
         :root {
             --primary: #FF5A00;
             --dark: #0F172A;
             --text: #334155;
-            --light: #F8FAFC;
+            --bg-light: #F8FAFC;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
 
         body {
             font-family: 'Inter', sans-serif;
+            background-color: var(--bg-light);
             color: var(--text);
-            line-height: 1.6;
-            background-color: #fff;
             display: flex;
-            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             min-height: 100vh;
-        }
-
-        /* Header stile Index */
-        header {
-            background: linear-gradient(135deg, var(--dark) 0%, #1e293b 100%);
-            color: white;
-            padding: 8rem 1.5rem 6rem;
             text-align: center;
-            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            padding: 2rem;
         }
 
-        .kicker {
-            color: var(--primary);
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-size: 0.9rem;
-            display: block;
-            margin-bottom: 1rem;
+        .error-container {
+            max-width: 600px;
+            background: white;
+            padding: 4rem 2rem;
+            border-radius: 32px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+            border-bottom: 8px solid var(--primary);
         }
 
         h1 {
             font-family: 'Lexend', sans-serif;
-            font-size: 4rem;
+            font-size: 6rem;
+            color: var(--dark);
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-family: 'Lexend', sans-serif;
+            font-size: 1.8rem;
             margin-bottom: 1.5rem;
-            line-height: 1.1;
+            color: var(--primary);
         }
 
-        .hero-p {
-            font-size: 1.25rem;
-            max-width: 700px;
-            margin: 0 auto 2.5rem;
-            color: #cbd5e1;
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+            color: #64748b;
         }
 
-        /* Card di Reindirizzamento */
-        .grid-container {
-            max-width: 1100px;
-            margin: -4rem auto 4rem;
+        .links-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 0 1.5rem;
-            position: relative;
-            z-index: 10;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            text-align: left;
         }
 
-        .card {
+        .nav-link {
+            padding: 1rem;
+            background: var(--bg-light);
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: 0.2s;
+            border: 1px solid transparent;
+        }
+
+        .nav-link:hover {
+            border-color: var(--primary);
             background: white;
-            padding: 2.5rem;
-            border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-            text-align: center;
-            border: 1px solid #e2e8f0;
+            transform: scale(1.02);
         }
-
-        .card h2 { font-family: 'Lexend', sans-serif; margin-bottom: 1rem; color: var(--dark); }
 
         .btn-home {
             display: inline-block;
-            padding: 1rem 2.5rem;
-            background: var(--primary);
+            margin-top: 3rem;
+            background: var(--dark);
             color: white;
+            padding: 1rem 2.5rem;
             border-radius: 50px;
-            font-weight: 700;
-            margin-top: 1rem;
             text-decoration: none;
+            font-weight: 800;
+            transition: 0.3s;
         }
 
-        .btn-outline {
-            display: inline-block;
-            padding: 0.8rem 2rem;
-            border-radius: 50px;
-            font-weight: 700;
-            margin-top: 1rem;
-            color: var(--dark);
-            border: 1px solid #cbd5e1;
-            text-decoration: none;
+        .btn-home:hover {
+            background: var(--primary);
         }
-
-        footer { 
-            background: var(--dark); 
-            color: #94a3b8; 
-            padding: 3rem 1.5rem; 
-            font-size: 0.9rem; 
-            margin-top: auto;
-            text-align: center;
-        }
-
-        @media (max-width: 600px) { h1 { font-size: 3rem; } }
     </style>
 </head>
 <body>
 
-    <header>
-        <span class="kicker">Errore 404</span>
-        <h1>Lost in Translation?</h1>
-        <p class="hero-p">La pagina che cerchi non esiste (o forse è stata scritta in una lingua che non abbiamo ancora decifrato).</p>
-        <a href="index.html" class="btn-home">Torna alla Home</a>
-    </header>
+    <div class="error-container">
+        <h1>404</h1>
+        <h2>Errore di Trasmissione.</h2>
+        <p>La risorsa che stai cercando non fa parte del protocollo o è stata spostata in una nuova coordinata geografica.</p>
 
-    <div class="grid-container">
-        <div class="card">
-            <h2>Studente?</h2>
-            <p>Non perdere tempo a cercare pagine inesistenti. Torna alla strategia per i tuoi esami.</p>
-            <a href="studenti/migliorare-voti.html" class="btn-outline">Guide Studenti</a>
+        
+
+        <div class="links-grid">
+            <a href="/index.html" class="nav-link">🏠 Home Globale</a>
+            <a href="/tedesco/index.html" class="nav-link">🇩🇪 Hub Tedesco</a>
+            <a href="/portoghese/index.html" class="nav-link">🇧🇷 Hub Portoghese</a>
+            <a href="/inglese/index.html" class="nav-link">🇬🇧 Hub Inglese</a>
+            <a href="/spagnolo/index.html" class="nav-link">🇪🇸 Hub Spagnolo</a>
+            <a href="/francese/index.html" class="nav-link">🇫🇷 Hub Francese</a>
         </div>
 
-        <div class="card">
-            <h2>Viaggiatore?</h2>
-            <p>Forse cercavi i nostri consigli per non fare figuracce al ristorante all'estero.</p>
-            <a href="viaggi/falsi-amici-inglese.html" class="btn-outline">Falsi Amici</a>
-        </div>
+        <a href="/index.html" class="btn-home">Ritorna alla Base</a>
     </div>
-
-    <footer>
-        <p>© 2026 Il Protocollo Poliglotta | Naviga con Strategia</p>
-    </footer>
 
 </body>
 </html>
