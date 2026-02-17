@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastronomia Tedesca: Cosa Mangiare in Germania | Il Protocollo Poliglotta</title>
+    <meta name="description" content="Guida completa alla cucina tedesca per viaggiatori. Dai piatti regionali bavaresi allo street food di Berlino e alla cultura della birra.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Lexend:wght@700;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #FF5A00;
+            --de-black: #1A1A1A;
+            --de-red: #D0021B;
+            --de-gold: #FFCE00;
+            --text: #334155;
+            --bg-food: #FFFDF5;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            color: var(--text);
+            background-color: #fff;
+            padding-bottom: 80px;
+        }
+
+        header {
+            padding: 6rem 1.5rem;
+            text-align: center;
+            background: linear-gradient(135deg, var(--de-red) 0%, #991b1b 100%);
+            color: white;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            border-bottom: 8px solid var(--de-gold);
+        }
+
+        h1 { font-family: 'Lexend', sans-serif; font-size: 2.8rem; line-height: 1.1; }
+
+        article { max-width: 850px; margin: 0 auto; padding: 4rem 1.5rem; }
+
+        .dish-card {
+            background: var(--bg-food);
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-left: 6px solid var(--de-gold);
+        }
+
+        .dish-title { font-family: 'Lexend', sans-serif; font-size: 1.3rem; color: var(--de-black); margin-bottom: 0.5rem; display: block; }
+
+        .cta-food {
+            background: var(--de-black);
+            color: white;
+            padding: 4rem 2rem;
+            border-radius: 32px;
+            text-align: center;
+            margin: 5rem 0;
+        }
+
+        .btn-de {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 1.2rem 3rem;
+            text-decoration: none;
+            font-weight: 800;
+            border-radius: 50px;
+            margin-top: 2rem;
+        }
+
+        .nav-back { color: var(--de-red); text-decoration: none; font-weight: 700; display: inline-block; margin-bottom: 2rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <span style="font-weight: 800; text-transform: uppercase; letter-spacing: 2px; color: var(--de-gold);">Culinary Guide</span>
+        <h1>Gastronomia Tedesca:<br>I sapori dell'Europa Centrale.</h1>
+    </header>
+
+    <article>
+        <a href="../index.html" class="nav-back">← Torna alla Home</a>
+
+        <p>Dimentica lo stereotipo di "solo würstel". La Germania offre una varietà culinaria incredibile, basata su materie prime di qualità, panificazione millenaria e riti sociali come il <i>Biergarten</i>.</p>
+
+        <h2>I Piatti da non perdere</h2>
+
+        <div class="dish-card">
+            <span class="dish-title">Schweinshaxe (Stinco di maiale)</span>
+            <p>Il re della cucina bavarese. Croccante fuori, tenerissimo dentro, servito solitamente con i <i>Knödel</i> (canederli di patate).</p>
+        </div>
+
+        <div class="dish-card">
+            <span class="dish-title">Maultaschen</span>
+            <p>I ravioli giganti dello Svevia, farciti con carne e spinaci. Una leggenda dice che furono inventati per "nascondere" la carne agli occhi di Dio durante la Quaresima.</p>
+        </div>
+
+        <div class="dish-card">
+            <span class="dish-title">Abendbrot</span>
+            <p>Non è un piatto, è un rito. La cena tipica tedesca a base di vari tipi di pane artigianale, affettati pregiati e formaggi.</p>
+        </div>
+
+        <div class="cta-food">
+            <h2 style="color: white; border: none; font-family: 'Lexend';">Ordina al ristorante come un locale.</h2>
+            <p style="color: var(--de-gold); margin-top: 1rem; font-weight: 600;">Padroneggia il vocabolario del cibo e la pronuncia corretta per goderti ogni pasto in Germania.</p>
+            <a rel="sponsored" href="https://www.awin1.com/awclick.php?gid=322314&mid=9659&awinaffid=2764918&linkid=2038224&clickref=" class="btn-de">Sblocca il tuo Tedesco con Babbel</a>
+        </div>
+
+        <p>Pronto per partire? Non dimenticare di consultare la nostra guida ai <a href="falsi-amici-tedesco.html">falsi amici</a> o scopri lo <a href="../tedesco/slang-e-idiomi.html">slang di Berlino</a>.</p>
+    </article>
+
+</body>
+</html>
