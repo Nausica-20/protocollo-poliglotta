@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hub Spagnolo: Strategie, Cultura e Business | Il Protocollo Poliglotta</title>
-    <meta name="description" content="Padroneggia lo spagnolo nel 2026. Guide sulla pronuncia, slang, benefici economici e kit di sopravvivenza per viaggiatori e professionisti.">
+    <meta name="description" content="Padroneggia lo spagnolo nel 2026. Guide sulla pronuncia, slang, benefici economici, errori comuni e kit per viaggiatori.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
             --primary: #FF5A00;
             --dark: #0F172A;
             --text: #334155;
-            --bg: #FFFBEB;
+            --bg-light: #F8FAFC;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -42,9 +42,9 @@
 
         .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
 
-        /* Grid System */
         .section-title { font-family: 'Lexend', sans-serif; font-size: 2rem; color: var(--dark); margin: 4rem 0 2rem; border-bottom: 4px solid var(--es-yellow); display: inline-block; }
 
+        /* Card Layout */
         .resource-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -53,26 +53,29 @@
 
         .card {
             background: white;
-            padding: 2rem;
+            padding: 2.2rem;
             border-radius: 20px;
             border: 1px solid #e2e8f0;
             transition: all 0.3s ease;
             display: flex;
             flex-direction: column;
+            text-decoration: none;
+            color: inherit;
         }
 
-        .card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.05); border-color: var(--es-red); }
+        .card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); border-color: var(--es-red); }
 
         .card h3 { font-family: 'Lexend', sans-serif; font-size: 1.5rem; color: var(--dark); margin-bottom: 1rem; }
         .card p { font-size: 0.95rem; color: #64748b; margin-bottom: 1.5rem; flex-grow: 1; }
         
-        .card-link { font-weight: 800; color: var(--es-red); text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
+        .card-link { font-weight: 800; color: var(--es-red); text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; display: flex; align-items: center; }
+        .card-link::after { content: ' →'; }
 
-        /* Special Sections */
+        /* Conversion Box */
         .cta-box {
             background: var(--dark);
             color: white;
-            padding: 4rem 2rem;
+            padding: 4.5rem 2rem;
             border-radius: 32px;
             text-align: center;
             margin: 5rem 0;
@@ -83,14 +86,19 @@
             display: inline-block;
             background: var(--primary);
             color: white;
-            padding: 1.2rem 3rem;
+            padding: 1.3rem 3.5rem;
             border-radius: 50px;
             font-weight: 800;
             text-decoration: none;
             margin-top: 2rem;
+            font-size: 1.1rem;
+            transition: 0.3s;
         }
 
-        .nav-back { margin-top: 2rem; display: inline-block; font-weight: 700; color: white; text-decoration: underline; }
+        .btn-main:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(255, 90, 0, 0.4); }
+
+        .nav-back { margin-top: 2rem; display: inline-block; font-weight: 700; color: white; text-decoration: none; border: 1px solid rgba(255,255,255,0.4); padding: 8px 20px; border-radius: 50px; font-size: 0.8rem; }
+        .nav-back:hover { background: white; color: var(--es-red); }
 
         @media (max-width: 600px) { h1 { font-size: 2.5rem; } }
     </style>
@@ -101,7 +109,7 @@
         <div class="container">
             <span class="kicker">Mundo Hispano 2026</span>
             <h1>Spagnolo: La tua porta <br>per il mondo.</h1>
-            <p style="font-size: 1.2rem; opacity: 0.9; max-width: 700px; margin: 1.5rem auto 0;">Dalla carriera negli USA alla "vida loca" di Madrid, lo spagnolo è il toolkit definitivo per il successo personale e professionale.</p>
+            <p style="font-size: 1.2rem; opacity: 0.9; max-width: 700px; margin: 1.5rem auto 0;">Dalla carriera negli USA alla "vida loca" di Madrid, lo spagnolo è il toolkit definitivo per il tuo successo globale.</p>
             <a href="../index.html" class="nav-back">← Torna alla Home Globale</a>
         </div>
     </header>
@@ -110,64 +118,74 @@
 
         <h2 class="section-title">Viaggio e Cultura</h2>
         <div class="resource-grid">
-            <div class="card">
+            <a href="frasi-viaggio.html" class="card">
                 <h3>50 Frasi per Viaggiare</h3>
-                <p>Il kit di sopravvivenza essenziale: dal check-in in hotel all'ordinazione di una caña.</p>
-                <a href="frasi-viaggio.html" class="card-link">Scarica il Kit →</a>
-            </div>
-            <div class="card">
-                <h3>Parole Intraducibili</h3>
-                <p>Sobremesa, Duende, Estrenar: i concetti che spiegano l'anima ispanica e che non puoi tradurre.</p>
-                <a href="parole-intraducibili.html" class="card-link">Leggi l'articolo →</a>
-            </div>
-            <div class="card">
+                <p>Il kit di sopravvivenza essenziale: dal check-in in hotel all'ordinazione di una caña al bar.</p>
+                <span class="card-link">Sfoglia il Kit</span>
+            </a>
+            <a href="parole-intraducibili.html" class="card">
+                <h3>20 Parole Intraducibili</h3>
+                <p>Sobremesa, Duende, Estrenar: scopri i concetti unici che spiegano l'anima della Spagna.</p>
+                <span class="card-link">Leggi l'articolo</span>
+            </a>
+            <a href="slang-e-idiomi.html" class="card">
                 <h3>Street Spanish (Slang)</h3>
-                <p>Smetti di parlare come un libro. Impara lo slang di Spagna, Messico e Argentina.</p>
-                <a href="slang-e-idiomi.html" class="card-link">Parla come un locale →</a>
-            </div>
-            <div class="card">
+                <p>Smetti di parlare come un libro di testo. Impara lo slang di Madrid, Città del Messico e Buenos Aires.</p>
+                <span class="card-link">Parla come un locale</span>
+            </a>
+            <a href="../viaggi/gastronomia-spagnola.html" class="card">
                 <h3>Gastronomia Spagnola</h3>
-                <p>Tapas, Pintxos e orari dei pasti: guida alla sopravvivenza nei ristoranti iberici.</p>
-                <a href="../viaggi/gastronomia-spagnola.html" class="card-link">Guida al gusto →</a>
-            </div>
+                <p>Tapas, Pintxos e orari dei pasti: guida completa per mangiare (bene) nel mondo ispanico.</p>
+                <span class="card-link">Guida al gusto</span>
+            </a>
         </div>
 
-        <h2 class="section-title">Tecnica e Strategia</h2>
+        <h2 class="section-title">Padronanza Tecnica</h2>
         <div class="resource-grid">
-            <div class="card">
+            <a href="pronuncia.html" class="card">
                 <h3>La Pronuncia Perfetta</h3>
-                <p>Padroneggia la J, la Ñ e la doppia R. Elimina l'accento italiano e acquista sicurezza.</p>
-                <a href="pronuncia.html" class="card-link">Dì addio alle gaffe →</a>
-            </div>
-            <div class="card">
-                <h3>Errori comuni (Trap)</h3>
-                <p>Smetti di aggiungere "S" a caso. I vizi tipici degli italiani che studiano spagnolo.</p>
-                <a href="errori-comuni.html" class="card-link">Correggi i tuoi vizi →</a>
-            </div>
-            <div class="card">
-                <h3>Spagna vs Latam</h3>
-                <p>Le differenze reali tra lo spagnolo di Madrid e quello di Città del Messico o Buenos Aires.</p>
-                <a href="../viaggi/spagnolo-spagna-vs-latam.html" class="card-link">Scegli la variante →</a>
-            </div>
+                <p>Padroneggia la J, la Ñ e la doppia R. Elimina l'accento italiano e acquista sicurezza immediata.</p>
+                <span class="card-link">Dì addio alle gaffe</span>
+            </a>
+            <a href="errori-comuni.html" class="card">
+                <h3>Errori Comuni (Italian Trap)</h3>
+                <p>Smetti di aggiungere "S" a caso. Correggi i vizi tipici degli italiani che studiano spagnolo.</p>
+                <span class="card-link">Correggi i tuoi vizi</span>
+            </a>
+            <a href="../viaggi/falsi-amici-spagnolo.html" class="card">
+                <h3>I Falsi Amici Pericolosi</h3>
+                <p>Attenzione: "Burro" non è burro! I 10 termini che possono rovinare una conversazione.</p>
+                <span class="card-link">Evita figuracce</span>
+            </a>
+            <a href="../viaggi/spagnolo-spagna-vs-latam.html" class="card">
+                <h3>Spagna vs Sudamerica</h3>
+                <p>Le differenze reali tra lo spagnolo europeo e quello latino-americano. Quale scegliere?</p>
+                <span class="card-link">Scegli la variante</span>
+            </a>
         </div>
 
         <div class="cta-box">
             <h2 style="color: white; border: none; font-family: 'Lexend'; font-size: 2.5rem;">Sblocca il tuo potenziale.</h2>
-            <p style="color: var(--es-yellow); margin-top: 1rem; font-weight: 600;">Oltre 500 milioni di persone ti aspettano. Inizia il tuo percorso con il metodo scientifico di Babbel.</p>
-            <a rel="sponsored" href="https://www.awin1.com/awclick.php?gid=322314&mid=9659&awinaffid=2764918&linkid=2038224&clickref=" class="btn-main">Scegli il tuo corso di Spagnolo</a>
+            <p style="color: var(--es-yellow); margin-top: 1rem; font-weight: 600;">Oltre 500 milioni di persone ti aspettano. Inizia oggi il tuo percorso con Babbel.</p>
+             <a rel="sponsored" href="https://www.awin1.com/awclick.php?gid=322314&mid=9659&awinaffid=2764918&linkid=2038224&clickref="
+                class="btn-main">Scegli il tuo corso di Spagnolo</a>
         </div>
 
-        <h2 class="section-title">Scienza e Carriera</h2>
+        <h2 class="section-title">Scienza e Successo</h2>
         <div class="resource-grid">
-            <div class="card">
-                <h3>Benefici Economici (ROI)</h3>
-                <p>Quanto vale lo spagnolo sul tuo CV? Analisi degli stipendi e dei mercati emergenti 2026.</p>
-                <a href="benefici-economici.html" class="card-link">Investi nel futuro →</a>
+            <div class="card" style="cursor: default;">
+                <a href="benefici-economici.html" style="text-decoration:none; color:inherit;">
+                    <h3>Benefici Economici (ROI)</h3>
+                    <p>Quanto vale lo spagnolo sul tuo CV nel 2026? Analisi degli stipendi e dei mercati emergenti.</p>
+                    <span class="card-link">Investi nel futuro</span>
+                </a>
             </div>
-            <div class="card">
-                <h3>Neuroscienza (Biohacking)</h3>
-                <p>Perché lo spagnolo è la "lingua della dopamina" e come protegge il tuo cervello.</p>
-                <a href="benefici-cervello.html" class="card-link">Potenzia la mente →</a>
+            <div class="card" style="cursor: default;">
+                <a href="benefici-cervello.html" style="text-decoration:none; color:inherit;">
+                    <h3>Neuroscienza (Biohacking)</h3>
+                    <p>Perché lo spagnolo è la "lingua della dopamina" e come protegge il tuo cervello dall'invecchiamento.</p>
+                    <span class="card-link">Potenzia la mente</span>
+                </a>
             </div>
         </div>
 
@@ -176,9 +194,10 @@
     <footer style="text-align: center; padding: 5rem 1.5rem; background: var(--dark); color: #94a3b8; font-size: 0.9rem; margin-top: 5rem;">
         <div class="container">
             <p>© 2026 Il Protocollo Poliglotta | Passione Atlantica, Strategia Globale.</p>
-            <div style="margin-top: 1rem;">
-                <a href="../legal/disclosure.html" style="color: #cbd5e1; margin: 0 10px;">Disclosure</a>
-                <a href="../supporto/faq.html" style="color: #cbd5e1; margin: 0 10px;">FAQ</a>
+            <div style="margin-top: 1.5rem;">
+                <a href="../legal/disclosure.html" style="color: #cbd5e1; margin: 0 15px; text-decoration: none;">Disclosure</a>
+                <a href="../supporto/faq.html" style="color: #cbd5e1; margin: 0 15px; text-decoration: none;">FAQ</a>
+                <a href="../index.html" style="color: #cbd5e1; margin: 0 15px; text-decoration: none;">Home</a>
             </div>
         </div>
     </footer>
