@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Studenti: Hack, Erasmus e Carriera | Il Protocollo Poliglotta</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Lexend:wght@700;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #FF5A00;
+            --student-purple: #4F46E5;
+            --dark: #0F172A;
+            --text: #334155;
+            --bg-light: #F8FAFC;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; color: var(--text); background-color: #fff; line-height: 1.6; }
+
+        header {
+            padding: 6rem 1.5rem;
+            text-align: center;
+            background: linear-gradient(135deg, var(--student-purple) 0%, #312e81 100%);
+            color: white;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+
+        h1 { font-family: 'Lexend', sans-serif; font-size: 3.5rem; line-height: 1.1; margin-bottom: 1rem; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 4rem 1.5rem; }
+
+        .section-title {
+            font-family: 'Lexend', sans-serif;
+            font-size: 2rem;
+            color: var(--dark);
+            margin: 4rem 0 2rem;
+            border-left: 5px solid var(--primary);
+            padding-left: 1rem;
+        }
+
+        .grid-resources {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+        }
+
+        .resource-card {
+            background: var(--bg-light);
+            padding: 2rem;
+            border-radius: 24px;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid #e2e8f0;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(79, 70, 229, 0.1);
+            border-color: var(--student-purple);
+        }
+
+        .resource-card h3 { font-family: 'Lexend', sans-serif; color: var(--student-purple); font-size: 1.5rem; margin-bottom: 1rem; }
+        .tag { font-size: 0.75rem; font-weight: 800; text-transform: uppercase; padding: 4px 12px; border-radius: 50px; background: #E0E7FF; color: var(--student-purple); display: inline-block; margin-bottom: 1rem; }
+        .btn-link { display: inline-block; margin-top: 1.5rem; color: var(--primary); font-weight: 800; text-decoration: none; }
+
+        .cta-footer { background: var(--dark); color: white; padding: 4rem 2rem; border-radius: 30px; text-align: center; margin-top: 6rem; }
+        .btn-main { display: inline-block; background: var(--primary); color: white; padding: 1.2rem 3rem; text-decoration: none; font-weight: 800; border-radius: 50px; margin-top: 2rem; }
+        .nav-back { font-weight: 700; color: var(--student-purple); text-decoration: none; margin-bottom: 2rem; display: inline-block; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <span style="text-transform:uppercase; font-weight:800; color:#A5B4FC; letter-spacing:2px;">Academic Excellence</span>
+        <h1>Area Studenti: <br>Il tuo futuro è Poliglotta.</h1>
+    </header>
+
+    <div class="container">
+        <a href="../index.html" class="nav-back">← Torna alla Home Generale</a>
+
+        <p style="font-size:1.2rem; color:#64748b; max-width:800px;">Che tu sia alle superiori o all'università, le lingue sono l'unica materia che paga dividendi per tutta la vita. Qui trovi le strategie per studiare meglio, partire senza ansia e costruire un CV che spacca.</p>
+
+        <h2 class="section-title">Academic Hacks</h2>
+        <div class="grid-resources">
+            <div class="resource-card">
+                <div>
+                    <span class="tag">Voti</span>
+                    <h3>Migliorare i Voti</h3>
+                    <p>Come usare le app di lingue per integrare il programma scolastico e arrivare al 9 senza sforzo.</p>
+                </div>
+                <a href="migliorare-voti.html" class="btn-link">Scopri i trucchi →</a>
+            </div>
+            <div class="resource-card">
+                <div>
+                    <span class="tag">Certificazioni</span>
+                    <h3>Guida ai Livelli (A1-C2)</h3>
+                    <p>Cosa significano davvero i livelli del quadro europeo e quale ti serve per l'università.</p>
+                </div>
+                <a href="guida-livelli-lingue.html" class="btn-link">Fai chiarezza →</a>
+            </div>
+        </div>
+
+        <h2 class="section-title">International Life</h2>
+        <div class="grid-resources">
+            <div class="resource-card">
+                <div>
+                    <span class="tag">Erasmus</span>
+                    <h3>Erasmus senza Ansia</h3>
+                    <p>Sopravvivere e divertirsi: come preparare la lingua 3 mesi prima di partire per non restare isolato.</p>
+                </div>
+                <a href="erasmus-tranquillo.html" class="btn-link">Prepara la valigia →</a>
+            </div>
+            <div class="resource-card">
+                <div>
+                    <span class="tag">Career</span>
+                    <h3>Perché la 3ª Lingua?</h3>
+                    <p>Nel 2026 l'inglese lo sanno tutti. Scopri perché spagnolo, francese o tedesco sono il tuo vero vantaggio.</p>
+                </div>
+                <a href="seconda-lingua-extra.html" class="btn-link">Scegli la tua arma →</a>
+            </div>
+        </div>
+
+        <div class="cta-footer">
+            <h2 style="font-family:'Lexend'; font-size: 2rem;">Sconto Studenti 2026</h2>
+            <p style="color:#cbd5e1; margin-top:1rem;">Babbel offre spesso tariffe agevolate per chi ha una mail istituzionale o è sotto i 25 anni. Non perdere l'occasione.</p>
+             <a rel="sponsored" href="https://www.awin1.com/awclick.php?gid=322314&mid=9659&awinaffid=2764918&linkid=2038224&clickref=" class="btn-main">Verifica la tua offerta</a>
+        </div>
+    </div>
+
+    <footer style="text-align:center; padding: 4rem; background:#f8fafc; color:#94a3b8; font-size:0.9rem;">
+        <p>© 2026 Il Protocollo Poliglotta | Education for the Brave.</p>
+    </footer>
+
+</body>
+</html>
