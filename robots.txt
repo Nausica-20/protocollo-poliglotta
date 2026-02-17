@@ -1,0 +1,22 @@
+# Benvenuto nel Protocollo Poliglotta
+# Istruzioni per i Crawler di Google, Bing e altri motori di ricerca
+
+User-agent: *
+
+# Permetti l'indicizzazione di tutto il sito
+Allow: /
+
+# Evita l'indicizzazione di cartelle tecniche o private (se le creerai)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Evita che i bot indicizzino la pagina di errore 404 (non ha valore SEO)
+Disallow: /404.html
+
+# Ottimizzazione della scansione: indica la posizione esatta della Sitemap
+Sitemap: https://www.tuosito.com/sitemap.xml
+
+# Istruzioni per i bot AI (opzionale: se vuoi impedire a GPT/Claude di leggere il tuo sito per addestramento)
+# User-agent: GPTBot
+# Disallow: /
