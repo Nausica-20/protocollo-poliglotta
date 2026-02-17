@@ -3,219 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Il Protocollo Poliglotta | Dominio Linguistico e Strategia 2026</title>
-    <meta name="description" content="Ottimizza il tuo futuro attraverso il bilinguismo strategico. Guide avanzate su Inglese, Tedesco, Francese, Portoghese e Spagnolo.">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Lexend:wght@700;900&display=swap" rel="stylesheet">
-
+    <title>Il Protocollo Poliglotta | Smetti di studiare, inizia a parlare</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --primary: #FF5A00;
-            --dark: #0F172A;
-            --accent: #3B82F6;
-            --text: #334155;
-            --bg-light: #F8FAFC;
-        }
-
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: var(--text);
-            background-color: #fff;
-            overflow-x: hidden;
-        }
-
-        /* Hero Section */
-        header {
-            background: linear-gradient(135deg, var(--dark) 0%, #1e293b 100%);
-            color: white;
-            padding: 10rem 1.5rem 12rem;
-            text-align: center;
-            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        }
-
-        h1 { font-family: 'Lexend', sans-serif; font-size: 4.5rem; line-height: 1; margin-bottom: 1.5rem; letter-spacing: -2px; }
-        .hero-p { font-size: 1.5rem; opacity: 0.9; max-width: 850px; margin: 0 auto 3rem; font-weight: 300; }
-
-        .container { max-width: 1240px; margin: 0 auto; padding: 0 1.5rem; }
-
-        /* Hub Grid */
-        .hub-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-            margin-top: -120px;
-            position: relative;
-            z-index: 10;
-        }
-
-        .hub-card {
-            background: white;
-            padding: 2.5rem 1.5rem;
-            border-radius: 24px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            text-decoration: none;
-            color: inherit;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            border: 1px solid #e2e8f0;
-            text-align: center;
-        }
-
-        .hub-card:hover { transform: translateY(-15px); border-color: var(--primary); }
-        .hub-card h2 { font-family: 'Lexend', sans-serif; font-size: 1.6rem; margin-bottom: 0.8rem; }
-        .hub-card p { font-size: 0.9rem; color: #64748b; margin-bottom: 1.5rem; }
-
-        .flag-line { height: 5px; width: 40px; margin: 0 auto 1.5rem; border-radius: 10px; }
-
-        /* Strategic Section */
-        .strategy-section { padding: 8rem 0; background: white; }
-        .section-tag { color: var(--primary); font-weight: 800; text-transform: uppercase; letter-spacing: 2px; display: block; text-align: center; margin-bottom: 1rem; }
-        .section-title { font-family: 'Lexend', sans-serif; font-size: 3rem; text-align: center; margin-bottom: 4rem; color: var(--dark); }
-
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 40px;
-            align-items: center;
-        }
-
-        /* CTA Section */
-        .master-cta {
-            background: var(--dark);
-            color: white;
-            padding: 6rem 2rem;
-            border-radius: 50px;
-            text-align: center;
-            margin: 4rem 0;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .btn-main {
-            display: inline-block;
-            background: var(--primary);
-            color: white;
-            padding: 1.4rem 4rem;
-            border-radius: 100px;
-            font-weight: 800;
-            text-decoration: none;
-            font-size: 1.2rem;
-            transition: 0.3s;
-        }
-
-        .btn-main:hover { transform: scale(1.05); box-shadow: 0 15px 30px rgba(255, 90, 0, 0.4); }
-
-        footer { background: #f1f5f9; padding: 6rem 0; text-align: center; }
-
-        @media (max-width: 768px) {
-            h1 { font-size: 2.8rem; }
-            .hub-grid { margin-top: -50px; }
+        body { font-family: 'Inter', sans-serif; }
+        .hero-bg {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
         }
     </style>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800">
 
-    <header>
-        <div class="container">
-            <h1>Diventa Poliglotta.</h1>
-            <p class="hero-p">Non limitarti a comunicare. Domina i mercati, espandi la tua mente e progetta il tuo successo globale.</p>
-            <a href="blog/babbel-lifetime-recensione.html" class="btn-main">Babbel Lifetime</a>
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-700 flex items-center gap-2">
+                <span class="text-3xl">🗣️</span> Protocollo Poliglotta
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#metodo" class="hover:text-blue-600 font-medium">Il Metodo</a>
+                <a href="#articoli" class="hover:text-blue-600 font-medium">Guide Linguistiche</a>
+                <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Inizia Ora</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-bg text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <span class="bg-blue-800 text-blue-100 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Nuovo Metodo 2026</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold mt-4 mb-6 leading-tight">
+                Smetti di "Studiare" Lingue.<br>Inizia a Parlarle.
+            </h1>
+            <p class="text-xl md:text-2xl text-blue-100 mb-8 max-w-2xl mx-auto">
+                Dimentica la grammatica noiosa e le ore sui libri. Scopri come il cervello apprende davvero con il metodo dei 15 minuti al giorno.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="metodo/babbel-review.html" class="bg-white text-blue-700 font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:bg-gray-100 transition transform hover:-translate-y-1">
+                    🚀 Scopri il Metodo
+                </a>
+                <a href="#articoli" class="border-2 border-white text-white font-bold text-lg px-8 py-4 rounded-lg hover:bg-white/10 transition">
+                    Leggi le Guide
+                </a>
+            </div>
         </div>
     </header>
 
-    <main class="container">
+    <main id="articoli" class="container mx-auto px-4 py-16">
         
-        <div class="hub-grid">
-            <a href="inglese/index.html" class="hub-card">
-                <div class="flag-line" style="background: #00247D;"></div>
-                <h2>Inglese</h2>
-                <p>Il sistema operativo globale. Essenziale per tech e finanza.</p>
-                <strong style="color: var(--accent);">Esplora →</strong>
-            </a>
-
-            <a href="tedesco/index.html" class="hub-card">
-                <div class="flag-line" style="background: #FFCE00;"></div>
-                <h2>Tedesco</h2>
-                <p>Leadership industriale. La chiave del mercato DACH.</p>
-                <strong style="color: var(--accent);">Esplora →</strong>
-            </a>
-
-            <a href="francese/index.html" class="hub-card">
-                <div class="flag-line" style="background: #002395;"></div>
-                <h2>Francese</h2>
-                <p>Diplomazia e lusso. La lingua delle istituzioni d'élite.</p>
-                <strong style="color: var(--accent);">Esplora →</strong>
-            </a>
-
-            <a href="portoghese/index.html" class="hub-card">
-                <div class="flag-line" style="background: #009c3b;"></div>
-                <h2>Portoghese</h2>
-                <p>Il miglior ROI 2026. Brasile e Hub tech di Lisbona.</p>
-                <strong style="color: var(--accent);">Esplora →</strong>
-            </a>
-
-            <a href="spagnolo/index.html" class="hub-card">
-                <div class="flag-line" style="background: #AA151B;"></div>
-                <h2>Spagnolo</h2>
-                <p>Oltre 500M di parlanti. Gateway per le Americhe.</p>
-                <strong style="color: var(--accent);">Esplora →</strong>
-            </a>
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900">Guide & Errori Comuni</h2>
+            <p class="text-gray-600 mt-2">Evita le figuracce che fanno il 90% dei turisti italiani.</p>
         </div>
 
-        <section class="strategy-section">
-            <span class="section-tag">Value Proposition</span>
-            <h2 class="section-title">Perché il bilinguismo è un asset finanziario.</h2>
-            
-            <div class="info-grid">
-                <div>
-                    <h3 style="font-family: 'Lexend'; font-size: 1.8rem; margin-bottom: 1.5rem;">Il Premium Salariale</h3>
-                    <p>Nel 2026, parlare una seconda lingua non è un "plus", è un moltiplicatore di reddito. Analizziamo come il tedesco e l'inglese possano aumentare il tuo potenziale di guadagno fino al 20%.</p>
-                    <a href="blog/benefici-economici-lingue.html" style="color: var(--primary); font-weight: 700; text-decoration: none; display: block; margin-top: 1rem;">Leggi l'analisi del ROI →</a>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="h-48 bg-red-100 flex items-center justify-center text-4xl">🇬🇧 vs 🇺🇸</div>
+                <div class="p-6">
+                    <span class="text-xs font-bold text-blue-600 uppercase">Inglese Business & Travel</span>
+                    <h3 class="text-xl font-bold mt-2 mb-2">Falsi Amici: Perché "Argument" non è un Argomento</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Stai dicendo al tuo capo che vuoi litigare? Scopri la differenza tra Argument e Topic, e perché le Chips a New York sono fredde.
+                    </p>
+                    <a href="viaggi/falsi-amici-inglese.html" class="text-blue-600 font-bold hover:underline flex items-center">
+                        Leggi la guida <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </a>
                 </div>
-                
-            </div>
+            </article>
 
-            <div class="info-grid" style="margin-top: 6rem;">
-                
-                <div>
-                    <h3 style="font-family: 'Lexend'; font-size: 1.8rem; margin-bottom: 1.5rem;">Biohacking & Longevità</h3>
-                    <p>Il bilinguismo è l'allenamento definitivo per la riserva cognitiva. Scopri come proteggere il tuo cervello dall'invecchiamento e migliorare il focus attraverso il "metodo dei 15 minuti".</p>
-                    <a href="blog/benefici-cervello-lingue.html" style="color: var(--primary); font-weight: 700; text-decoration: none; display: block; margin-top: 1rem;">La scienza del Protocollo →</a>
+            <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="h-48 bg-yellow-100 flex items-center justify-center text-4xl">🇪🇸 🥘</div>
+                <div class="p-6">
+                    <span class="text-xs font-bold text-yellow-600 uppercase">Spagna & Latam</span>
+                    <h3 class="text-xl font-bold mt-2 mb-2">Aceite, Burro e l'imbarazzo di "Embarazada"</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Non rovinare la tua insalata chiedendo aceto! E attenzione: in Messico "Coger" non significa prendere l'autobus...
+                    </p>
+                    <a href="viaggi/falsi-amici-spagnolo.html" class="text-blue-600 font-bold hover:underline flex items-center">
+                        Leggi la guida <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </a>
                 </div>
-            </div>
-        </section>
+            </article>
 
-        <section style="background: var(--bg-light); padding: 6rem 2rem; border-radius: 40px; text-align: center;">
-            <h2 style="font-family: 'Lexend'; font-size: 2.2rem; margin-bottom: 1.5rem;">Progetta il futuro dei tuoi figli.</h2>
-            <p style="max-width: 700px; margin: 0 auto 3rem; font-size: 1.1rem; color: #64748b;">Dalla finestra di opportunità dell'infanzia ai protocolli per studenti Erasmus. Costruiamo le basi per la prossima generazione di leader globali.</p>
-            <div style="display: flex; gap: 30px; justify-content: center; flex-wrap: wrap;">
-                <a href="studenti/guida-genitori.html" style="text-decoration: none; font-weight: 800; color: var(--dark);">Guida Genitori</a>
-                <a href="studenti/migliorare-voti.html" style="text-decoration: none; font-weight: 800; color: var(--dark);">Migliorare i Voti</a>
-                <a href="studenti/erasmus-tranquillo.html" style="text-decoration: none; font-weight: 800; color: var(--dark);">Erasmus Protocol</a>
-            </div>
-        </section>
+            <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="h-48 bg-green-100 flex items-center justify-center text-4xl">🇵🇹 🇧🇷</div>
+                <div class="p-6">
+                    <span class="text-xs font-bold text-green-600 uppercase">Portogallo & Brasile</span>
+                    <h3 class="text-xl font-bold mt-2 mb-2">Presunto Colpevole? No, Prosciutto Crudo!</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Il menu portoghese sembra un codice penale per gli italiani. E attenzione a come pronunci "Pão" (Pane) se non vuoi essere volgare.
+                    </p>
+                    <a href="viaggi/falsi-amici-portoghese.html" class="text-blue-600 font-bold hover:underline flex items-center">
+                        Leggi la guida <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </a>
+                </div>
+            </article>
 
-        <div class="master-cta">
-            <h2 style="font-family: 'Lexend'; font-size: 2.8rem; margin-bottom: 1.5rem;">L'investimento che non subisce inflazione.</h2>
-            <p style="font-size: 1.3rem; opacity: 0.8; margin-bottom: 3rem;">Sblocca il tuo accesso a vita a tutte le lingue del mondo. Una sola volta. Per sempre.</p>
-             <a rel="sponsored" href="https://www.awin1.com/awclick.php?gid=322314&mid=9659&awinaffid=2764918&linkid=2038224&clickref="class="btn-main">Ottieni Babbel Lifetime</a>
+            <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="h-48 bg-blue-50 flex items-center justify-center text-4xl">🇫🇷 🥐</div>
+                <div class="p-6">
+                    <span class="text-xs font-bold text-indigo-600 uppercase">Francia & Bon Ton</span>
+                    <h3 class="text-xl font-bold mt-2 mb-2">La Cantine non è la Cantina (e il Bonjour è legge)</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Perché verrai ignorato se non saluti? E perché se cerchi vino non devi chiedere della "Cantine"? Il galateo linguistico.
+                    </p>
+                    <a href="viaggi/falsi-amici-francese.html" class="text-blue-600 font-bold hover:underline flex items-center">
+                        Leggi la guida <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </a>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="h-48 bg-gray-200 flex items-center justify-center text-4xl">🇩🇪 🍺</div>
+                <div class="p-6">
+                    <span class="text-xs font-bold text-gray-700 uppercase">Germania & Regole</span>
+                    <h3 class="text-xl font-bold mt-2 mb-2">Gift è Veleno! (Non fare regali pericolosi)</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Il falso amico più letale d'Europa. Inoltre: perché dare del "Tu" a un poliziotto tedesco può costarti una multa salata.
+                    </p>
+                    <a href="viaggi/falsi-amici-tedesco.html" class="text-blue-600 font-bold hover:underline flex items-center">
+                        Leggi la guida <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </a>
+                </div>
+            </article>
+
+            <article class="bg-blue-600 rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 text-white transform md:scale-105 border-4 border-blue-400">
+                <div class="h-48 bg-blue-700 flex items-center justify-center text-4xl">🚀 🧠</div>
+                <div class="p-6">
+                    <span class="text-xs font-bold text-blue-200 uppercase">Strategia</span>
+                    <h3 class="text-xl font-bold mt-2 mb-2">Il Protocollo: Come imparare in 15 Minuti</h3>
+                    <p class="text-blue-100 text-sm mb-4">
+                        La guida completa al metodo che batte le scuole tradizionali. Smetti di tradurre nella tua testa e inizia a pensare nella nuova lingua.
+                    </p>
+                    <a href="metodo/babbel-review.html" class="bg-white text-blue-700 px-4 py-2 rounded font-bold hover:bg-gray-100 inline-block mt-2">
+                        Scopri il Segreto
+                    </a>
+                </div>
+            </article>
+
         </div>
-
     </main>
 
-    <footer>
-        <div class="container">
-            <h2 style="font-family: 'Lexend'; margin-bottom: 2rem;">Il Protocollo Poliglotta</h2>
-            <div style="display: flex; gap: 40px; justify-content: center; margin-bottom: 3rem; flex-wrap: wrap;">
-                <a href="lifelong-learning/guida-apprendimento-continuo.html" style="color: var(--text); text-decoration: none; font-weight: 600;">Lifelong Learning</a>
-                <a href="supporto/faq.html" style="color: var(--text); text-decoration: none; font-weight: 600;">FAQ</a>
-                <a href="legal/disclosure.html" style="color: var(--text); text-decoration: none; font-weight: 600;">Privacy & Disclosure</a>
+    <section class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Non perdere la prossima lezione</h2>
+            <p class="text-gray-400 mb-8">Unisciti a 15.000+ studenti intelligenti. Niente spam, solo consigli linguistici.</p>
+            <form class="max-w-md mx-auto flex gap-2">
+                <input type="email" placeholder="La tua email migliore" class="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none">
+                <button class="bg-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-blue-500 transition">Iscriviti</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 border-t border-gray-800 text-gray-500 py-8">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                &copy; 2026 Il Protocollo Poliglotta. Tutti i diritti riservati.
             </div>
-            <p style="opacity: 0.5;">© 2026 Il Protocollo Poliglotta. Precisione strategica applicata alla linguistica.</p>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-white">Privacy</a>
+                <a href="#" class="hover:text-white">Disclaimer Affiliazione</a>
+                <a href="#" class="hover:text-white">Contatti</a>
+            </div>
         </div>
     </footer>
 
